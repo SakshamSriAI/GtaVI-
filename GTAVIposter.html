@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            background-image:url(./WhatsApp\ Image\ 2026-11-19\ at\ 10.09.08.jpeg);
+            background-size:cover;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,0.75),
+                    rgba(0,0,0,0.15)
+                ),
+                linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.65),
+                    transparent 50%
+                ),
+                url("https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=3840");
+
+            background-size: cover;
+            background-position: center;
+            position: relative;
+                
+        }
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 200px;
+            grid-template-rows: 70px 1fr 90px;
+            height: 100vh;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .header{
+            grid-column:span 2;
+           
+        }
+        .box-left{
+            position:absolute;
+            left: 10%;
+            top:25%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+        }
+        .box-right{
+            position:absolute;
+            right:0;
+            top:35%;
+
+            
+        }
+        .footer{
+            grid-column:span 2;
+            
+        }
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:10px;
+            color:white;
+        }
+        ul{
+            display:flex;
+            list-style:none;
+            gap: 20px;
+        }
+        .text{
+            color:white;
+            font-size:100px;
+            font-weight:900;
+            margin-top:30px;
+            letter-spacing: -5px;
+        }
+        .present{
+            font-family: 'Montserrat', sans-serif;
+            font-size:22px;
+            font-weight: 700;
+
+        }
+        .title{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: white;
+        }
+        button{
+        display: inline-block;
+            padding: 16px 35px;
+
+            background: white;
+            color: black;
+
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 2px;
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #222;
+            color: white;
+            transform: translateY(-4px);
+        }
+        
+        .box{
+            height:50px;
+            width:50px;
+            background-color:rgba(36, 35, 35, 0.577);
+            margin-bottom:10px;
+            transition:2s ease;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+        }
+        .box:hover{
+        transform:scaleX(3);
+        background-color:white;
+        color:black;
+        }
+        .box-container{
+            height:300px;
+            width:80px;
+        }
+        .box-container:hover{
+            transform:translateX(-70px);
+            transition: 2s ease-in-out;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+            <nav>
+                <span class="present"><b>ROCKSTAR GAMES </b></span>
+                <span>
+                    <ul>
+                        <li><b>HOME</b></li>
+                        <li><b>START</b></li>
+                        <li><b>MEDIA</b></li>
+                        <li><b>EXPLORE</b></li>
+                    </ul>
+                </span>
+            </nav>
+            
+       </div>
+       <div class="box-left">
+        <div>
+            <div class="title">ROCKSTAR GAME PRESENTS</div>
+            <div class="text">
+                <span>GRAND</span><br>
+                <span>THEFT</span><br>
+                <span>AUTO VI</span>
+            </div>
+            <div>
+                <p>Welcome to Leonida. Discover a world of opprtunity,danger<br>
+                and unforgettable stories.Vice City is awaiting for you</bt></p>
+            </div>
+            <br>
+            <button>EXPLORE GTA VI -></button>
+        </div>
+
+
+       </div>
+       <div class="box-right">
+            <div class="box-container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+            </div>
+       </div>
+       <div class="footer"></div>
+    </div>
+</body>
+</html>
